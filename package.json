@@ -1,0 +1,45 @@
+{
+  "name": "fs04",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal real-time chat app with Next.js, Express, WebSocket, and MySQL",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "next dev",
+    "dev:api": "node --watch --import tsx server/index.ts",
+    "build": "next build",
+    "start": "concurrently \"npm run start:web\" \"npm run start:api\"",
+    "start:web": "next start",
+    "start:api": "node --import tsx server/index.ts",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/multer": "^2.1.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "mysql2": "^3.22.5",
+    "next": "^15.5.19",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/ws": "^8.18.1",
+    "concurrently": "^10.0.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
