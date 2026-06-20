@@ -1,5 +1,5 @@
 {
-  "name": "fs04",
+  "name": "PRODIGY_FS_04",
   "version": "1.0.0",
   "private": true,
   "description": "Minimal real-time chat app with Next.js, Express, WebSocket, and MySQL",
@@ -8,8 +8,8 @@
     "dev:web": "next dev",
     "dev:api": "node --watch --import tsx server/index.ts",
     "build": "next build",
-    "start": "concurrently \"npm run start:web\" \"npm run start:api\"",
     "start:web": "next start",
+    "start": "node --import tsx server/index.ts",
     "start:api": "node --import tsx server/index.ts",
     "lint": "next lint"
   },
