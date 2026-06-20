@@ -6,7 +6,7 @@ import path from "path";
 dotenv.config();
 
 const {
-  DB_HOST = "cela.proxy.rlwy.net",
+  DB_HOST = "acela.proxy.rlwy.net",
   DB_PORT = "12150",
   DB_USER = "root",
   DB_PASSWORD = "pzOzvXpaFjZvuPmpHlgZqLdMjQIfRYYm",
